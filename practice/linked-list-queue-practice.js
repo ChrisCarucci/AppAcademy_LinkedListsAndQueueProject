@@ -90,13 +90,13 @@ class SinglyLinkedList {
 
         let curr = this.head;
 
-        while (n && curr) {
+        while (n) {
             if (n < 0) return null;
             curr = curr.next;
             n--;
         }
 
-        if (n === 0 && curr) return curr;
+        if (n === 0) return curr;
         return null;
 
         // Write your hypothesis on the time complexity of this method here
